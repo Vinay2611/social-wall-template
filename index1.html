@@ -1,0 +1,560 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <script type="text/javascript">
+        (function (id) {
+            function append(scriptid, url, async) {
+                var d = document, sn = 'script', f = d.getElementsByTagName(sn)[0];
+                if (!f) f = d.head;
+                var s = d.createElement(sn);
+                s.async = true;
+                s.id = scriptid;
+                s.src = url;
+                f.parentNode.insertBefore(s, f);
+            }
+            function getRootDomain() {
+                var parts = window.location.hostname.split('.');
+                if (parts.length === 2) rootDomain = parts[0];
+                else if (parts.length > 2) {
+                    // see if the next to last value is a common tld
+                    var part = parts[parts.length - 2];
+                    if (part === 'com' || part === 'co') {
+                        rootDomain = parts[parts.length - 3]; // go back one more
+                    } else {
+                        rootDomain = part;
+                    }}
+                return rootDomain; }
+            window.evidon = {};
+            window.evidon.id = id;
+            var cdn = '//c.evidon.com/', rootDomain = getRootDomain(), noticecdn = cdn + 'sitenotice/';
+            append('evidon-notice', noticecdn + 'evidon-sitenotice-tag.js', false);
+            append('evidon-location', cdn + 'geo/country.js', true);
+            append('evidon-themes', noticecdn + id + '/snthemes.js', true);
+            if (rootDomain) append('evidon-settings', noticecdn + id + '/' + rootDomain + '/settings.js', true);
+            window.evidon.priorConsentCallback = function () {
+// Add the tags which need to wait for prior consent here.
+// This should be all your advertising tags and probably most of your social and tracking tags.
+            }
+        })(4478);
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>vForum</title>
+    <style type="text/css">
+
+        /* Common Email Client Fixing */
+        #outlook a            { padding:0; }
+        .ReadMsgBody          { width:100%; }
+        .ExternalClass        { width:100%; display:block !important; }
+        .yshortcuts, a .yshortcuts,
+        a .yshortcuts:hover, a .yshortcuts:active,
+        a .yshortcuts:focus   { background-color:transparent !important; border:none !important; color:inherit !important; }
+        body                  { font-family:arial, sans-serif; }
+        p                     { margin-bottom:0; margin:0; }
+
+        img                   { border:0; display:block; outline:none; height:auto; line-height:100%; text-decoration:none; }
+        table, td             { border-collapse:collapse !important; border-spacing:0 !important; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+        #container            { border:1px solid #999999; }
+
+        #unsubscribe a        { color:#999999; }
+        .appleLinks a,
+        .appleLinksBlack a    { color:#000000 !important; text-decoration:none; }
+        .appleLinksWhite a    { color:#FFFFFF !important; text-decoration:none; }
+        a[href^=tel]          { color:#000000 !important; text-decoration:none; }
+        a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
+        @media screen and (max-width: 650px) {
+            .full-width-image img { width: 100%; max-width: 650px; height: auto; }
+            .contents             { width: 100%; }
+            table[class=wrapper]  { width: 100% !important;}
+            td[class=wrap]  { width: 100% !important;}
+        }
+        .lbl {display:block;
+        }
+        .lbl {	display:block;
+        }
+        .msg {color:#F00; }
+        .req {color:#F00;
+            padding-left:2px;
+        }
+        .req {	color:#F00;
+            padding-left:2px;
+        }
+
+        .regBtn{ background:#0095d9; border: 0px; padding: 8px 60px; color:#fff; cursor: pointer;}
+    </style>
+
+    <link rel="stylesheet" href="https://www.vmware.com/content/dam/vmwaredesigns/scraper/non-responsive.css"/><!--<link rel="stylesheet" type="text/css" href="https://www.vmware.com/content/dam/vmwaredesigns/scraper/scrapper-footer.css"/>-->
+
+    <script language="javascript" src="https://shobizresponse.com/2018/vForum/Hol/jquery.js"></script>
+    <script src="https://campaign.vmware.com/js/itprb/translations.js"></script>
+
+
+</head>
+
+<script type="text/javascript">
+    $(function(){
+        $("#form1").submit(function() {
+
+
+            var valid = true;
+
+            if($("#first_name").val() == "") {
+                $("#first_name").css('border-color','#F00');
+                valid = false;
+            } else {
+                $("#first_name").css('border-color','#999999');
+            }
+
+            if($("#last_name").val() == "") {
+                $("#last_name").css('border-color','#F00');
+                valid = false;
+                //return false;
+            } else {
+                $("#last_name").css('border-color','#999999');
+            }
+
+            if($("#company").val() == "") {
+                $("#company").css('border-color','#F00');
+                valid = false;
+                //return false;
+            } else {
+                $("#company").css('border-color','#999999');
+            }
+
+            if($("#department").val() == "") {
+                $("#department").css('border-color','#F00');
+                valid = false;
+            } else {
+                $("#department").css('border-color','#999999');
+            }
+
+            if($("#designation").val() == "") {
+                $("#designation").css('border-color','#F00');
+                valid = false;
+            }  else {
+                $("#designation").css('border-color','#999999');
+            }
+
+            var email = $("#email").val();
+            var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+            if($("#email").val() == "") {
+                $("#email").css('border-color','#F00');
+                valid = false;
+            } else {
+                if(filter.test(email)) {
+                    $("#email").css('border-color','#999999');
+                }
+            }
+
+
+            if($("#event_city").val() == "") {
+                $("#event_city").css('border-color','#F00');
+                valid = false;
+                //return false;
+            }  else {
+                $("#event_city").css('border-color','#999999');
+            }
+
+            //city
+            if($("#city").val() == "") {
+                $("#city").css('border-color','#F00');
+                valid = false;
+                //return false;
+            }  else {
+                $("#city").css('border-color','#999999');
+            }
+
+            if($("#postal_code").val() == "") {
+                $("#postal_code").css('border-color','#F00');
+                valid = false;
+            }  else {
+                $("#postal_code").css('border-color','#999999');
+            }
+
+            if($("#mobile_no").val() == "") {
+                $("#mobile_no").css('border-color','#F00');
+                valid = false;
+            } else if(isNaN($("#mobile_no").val()) || $("#mobile_no").val().length < 10) {
+                $("#mobile_no").css('border-color','#F00');
+                valid = false;
+            }  else {
+                $("#mobile_no").css('border-color','#999999');
+            }
+
+            if($("#technology").val() == "") {
+                $("#technology").css('border-color','#F00');
+                valid = false;
+            }  else {
+                $("#technology").css('border-color','#999999');
+            }
+
+            if($('input[name="lab_solution[]"]:checked').length == 0) {
+                $("#lab-error").html("Please select two solutions");
+                valid = false;
+            } else if($('input[name="lab_solution[]"]:checked').length < 2) 	{
+                $("#lab-error").html("Please select only two solutions");
+                valid = false;
+            } else if($('input[name="lab_solution[]"]:checked').length > 2) {
+                $("#lab-error").html("Please select only two solutions");
+                valid = false;
+            } else {
+                $("#lab-error").html("");
+            }
+
+            if($('input[name="labhrs[]"]:checked').length == 0) {
+                $("#labhrs-error").html("Please select only two");
+                valid = false;
+            } else if($('input[name="labhrs[]"]:checked').length < 1) 	{
+                $("#labhrs-error").html("Please select only two");
+                valid = false;
+            } else if($('input[name="labhrs[]"]:checked').length > 1) {
+                $("#labhrs-error").html("Please select only two");
+                valid = false;
+            } else {
+                $("#labhrs-error").html("");
+            }
+            //alert("Hi");
+
+            if(valid == true) {
+
+                $.post('register_proc.php',$('#form1').serialize(), function(response){
+                    if(response == 1) {
+                        window.location= 'thanks.html';
+                    } else {
+                        alert("Unable to register you, please contact Web Administrator");
+                    }
+                });
+
+            }
+            //Do not remove
+            return false;
+        });
+    });
+
+</script>
+<script type="text/javascript">
+    function showlabs(val) {
+        if(val == 'lab_solution1') {
+            $('#lab_solutionDiv1').toggle('fade');
+            $('html,body'). animate({scrollTop: $(document). height()}, 200);
+        }
+
+    }
+</script>
+<script type="text/javascript">
+    function chkcontrol(j) {
+        var total=0;
+        for(var i=0; i < document.form1.lab_solution1.length; i++){
+            if(document.form1.lab_solution1[i].checked){
+                total =total +1;
+            }
+            if(total > 2){
+                alert("Please Select only 2")
+                document.form1.lab_solution1[j-1].checked = false ;
+                return false;
+            }
+        }
+    }
+
+    function chkcontrol2(j) {
+        var total=0;
+        for(var i=0; i < document.form1.labhrs.length; i++){
+            if(document.form1.labhrs[i].checked){
+                total =total +1;
+            }
+            if(total > 1){
+                alert("Please Select only 1")
+                document.form1.labhrs[j-1].checked = false ;
+                return false;
+            }
+        }
+    }
+
+</script>
+
+</script>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="15" offset="0">
+
+
+    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" height="100%" id="bodyTable">
+
+
+    <tr>
+    <td align="center" height="100%" valign="top" width="1018" id="bodyCell">
+
+    <!-- Email Contents starts-->
+
+    <table width="650" border="0" align="center" cellpadding="0" cellspacing="0" class="contents">
+    <tr>
+    <td class="full-width-image" valign="top" align="left"><a href="http://shobizresponse.com/2018/vForum/register.html" target="_blank"><img src="http://shobizresponse.com/2018/vForum/Hol/images/hol/hol-reg.jpg" width="650" alt=""/></a></td>
+</tr>
+<tr>
+<td class="full-width-image" valign="top" align="left"><img src="http://shobizresponse.com/2018/vForum/images/invite/section-shdw.png" width="650" alt=""/></td>
+    </tr>
+
+    <tr>
+    <td align="right" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#00000; padding-right: 30px;">&nbsp;</td>
+
+</tr>
+
+
+<tr>
+<td valign="top" align="left" style="padding:20px 30px 10px 30px;"><p>&nbsp;</p>
+<!--    <p>&nbsp;</p>
+<p><strong>Registration is closed for this event </strong></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>-->
+<form id="form1" name="form1" method="post" class="mainform">
+
+    <table width="100%" border="0" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#00000" cellspacing="0" cellpadding="5">
+    <tr>
+    <td colspan="2" style="font-size:16px; font-weight:bold;">Registration</td>
+    </tr>
+    <tr>
+    <td width="34%" align="left">First Name<span class="req">*</span>:</td>
+<td width="66%"><input name="first_name" id="first_name" value="" type="text" tabindex="1"></td>
+    </tr>
+    <tr>
+    <td align="left">Last Name<span class="req">*</span>:</td>
+<td><input  name="last_name" id="last_name"  value="" type="text" tabindex="2"></td>
+    </tr>
+    <tr>
+    <td align="left">Company / Organization<span class="req">*</span>:</td>
+<td><input name="company"  value="" id="company" placeholder="" autocomplete="off" role="textbox"  type="text" tabindex="3"></td>
+    </tr>
+    <tr>
+    <td align="left">City<span class="req">*</span>:</td>
+<td><select name="City"  id="city" tabindex="9" >
+    <option selected="selected" value="">Select One</option>
+<option value="Bengaluru">Bengaluru</option>
+    <option value="Delhi">Delhi</option>
+    </select></td>
+</tr>
+<tr>
+<td align="left">Department<span class="req">*</span>:</td>
+<td><select name="department"  id="department" tabindex="9" >
+    <option selected="selected" value="">Select One</option>
+<option value="Customer Service / Call Center">Customer Service / Call Center</option>
+<option value="Executive Office">Executive Office</option>
+<option value="Finance">Finance</option>
+    <option value="Human Resources">Human Resources</option>
+<option value="IT - Applications / Development">IT - Applications / Development</option>
+    <option value="IT - Business Intelligence">IT - Business Intelligence</option>
+<option value="IT - Database">IT - Database</option>
+    <option value="IT - Desktop / Help Desk">IT - Desktop / Help Desk</option>
+<option value="IT - Network">IT - Network</option>
+    <option value="IT - Operations">IT - Operations</option>
+    <option value="IT - Project Management">IT - Project Management</option>
+<option value="IT - Quality / Testing">IT - Quality / Testing</option>
+    <option value="IT - Risk / Compliance / Security">IT - Risk / Compliance / Security</option>
+    <option value="IT - Server / Storage">IT - Server / Storage</option>
+    <option value="IT - Telecom">IT - Telecom</option>
+    <option value="IT - Web">IT - Web</option>
+    <option value="IT - All">IT - All</option>
+    <option value="Legal">Legal</option>
+    <option value="Marketing / Communications">Marketing / Communications</option>
+    <option value="Research &amp; Development">Research &amp; Development</option>
+    <option value="Sales">Sales</option>
+    <option value="Technical Support">Technical Support</option>
+<option value="Other">Other</option>
+    </select></td>
+</tr>
+<tr>
+<td align="left">Designation<span class="req">*</span>:</td>
+<td><input  name="designation" id="designation"  value="" type="text" tabindex="11"></td>
+    </tr>
+    <tr>
+    <td align="left">Work Email<span class="req">*</span> :</td>
+<td><input name="email" id="email" value="" type="text" tabindex="4"></td>
+    </tr>
+    <tr>
+    <td align="left">Mobile no<span class="req">*</span> :</td>
+<td><input name="mobile_no" id="mobile_no"  value="" type="text" tabindex="6"></td>
+    </tr>
+    <tr>
+    <td align="left">Technology you are working on<span class="req">*</span> :</td>
+<td>
+<select name="technology"  id="technology" tabindex="9" >
+    <option selected="selected" value="">Select One</option>
+<option value="Cloud technology/Saas">Cloud technology/Saas</option>
+<option value="Business intelligence/analytics">Business intelligence/analytics</option>
+<option value="Web development">Web development</option>
+<option value="SAP consultant">SAP consultant</option>
+<option value="Mobile application development and device management">Mobile application development and device management</option>
+<option value="Database/network administrator">Database/network administrator</option>
+<option value="Security analyst">Security analyst</option>
+<option value="Big data">Big data</option>
+<option value="Programming and application development">Programming and application development</option>
+</select></td>
+</tr>
+<tr>
+<td align="left">Labs on which solution is your preference (Select any two)<span class="req">*</span> :</td>
+<td><label for='lab_solution1' class="lbl">
+    <input type="checkbox" name="lab_solution[]" id="lab_solution1" value="Modernize Data Center" onclick="chkcontrol(1)">
+    Modernize Data Center</label>
+<label for='lab_solution2' class="lbl">
+    <input type="checkbox" name="lab_solution[]" id="lab_solution1" value="Integrate Public Clouds" onclick="chkcontrol(2)">
+    Integrate Public Clouds</label>
+<label for='lab_solution3' class="lbl">
+    <input type="checkbox" name="lab_solution[]" id="lab_solution1" value="Empower Digital Workspace" onclick="chkcontrol(3)">
+    Empower Digital Workspace</label>
+<label for='lab_solution4' class="lbl">
+    <input type="checkbox" name="lab_solution[]" id="lab_solution1" value="Transform Security" onclick="chkcontrol(4)">
+    Transform Security</label>
+<div id="lab-error" class="msg"></div>
+    <p style="color:#999; font-weight:700;">For more information <a style="cursor:pointer; color:#072978;" onClick="showlabs('lab_solution1');">please click here</a></p></td>
+</tr>
+<tr>
+<td colspan="2"><div id="lab_solutionDiv1" style="display:none;">
+    <div style="width:100%; border:#000 solid 0px; font-size: 13px; line-height:18px">
+    <h2 style=" font-size: 14px;">Modernize Data Center</h2>
+<ul>
+<li>HOL-1904-01-SDC - VMware vSphere 6.7 - Performance Diagnostics and Benchmarking </li>
+<li>HOL-1904-02-CHG - vSphere 6.7 - Challenge Lab</li>
+<li>HOL-1910-01-SDC - Virtualization 101: Introduction to VMware vSphere</li>
+<li>HOL-1911-01-SDC - What's New in VMware vSphere 6.7</li>
+<li>HOL-1901-04-CMP - Monitor and Troubleshoot Your Infrastructure and Applications with vRealize Operations, vRealize Log Insight, and Wavefront by VMware</li>
+<li>HOL-1908-01-HCI - VMware vSAN v6.7 - Getting Started</li>
+
+</ul>
+</div>
+<div style="width:100%; border:#000 solid 0px; font-size: 13px; line-height:18px">
+    <h2 style=" font-size: 14px;">Empower Digital Workspaces</h2>
+<ul>
+<li>HOL-1957-01-UEM - Workspace ONE UEM with App &amp; Access Management</li>
+<li>HOL-1957-04-UEM - Workspace ONE UEM - Windows 10 Management</li>
+<li>HOL-1951-02-VWS - VMware Horizon 7 Enterprise - Getting Started</li>
+<li>HOL-1951-01-VWS - VMware Workspace ONE - Getting Started</li>
+<li>Windows 10 AirLift</li>
+<li>HOL-1851-01-ADV - Horizon 7.1 Enterprise - Getting Started</li>
+<li>HOL-1851-02-ADV - Horizon 7.1 Instant Clones</li>
+</ul>
+</div>
+<div style="width:100%; font-size: 13px; line-height:18px">
+    <h2 style=" font-size: 14px;">VMware Virtual Cloud Network</h2>
+<ul>
+<li>HOL-1922-01-NET - VMware NSX Cloud – Getting Started</li>
+<li>HOL-1940-01-NET - VMware NSX SD-WAN by VeloCloud - Getting Started</li>
+<li>HOL-1920-01-EMT - Mware Integrated OpenStack (VIO) &amp; NSX Integration - Getting Started</li>
+</ul>
+</div>
+
+<div style="width:100%; font-size: 13px; line-height:18px">
+    <h2 style=" font-size: 14px;">Integrate Public Clouds</h2>
+<ul>
+<li>HOL-1930-02-CNA - VMware vSphere Integrated Containers - Getting Started</li>
+<li>HOL-1931-01-CNA - VMware Pivotal Container Service and Kubernetes - Getting Started</li>
+<li>HOL-1987-01-HBD - VMware Cloud on AWS - Getting Started</li>
+</ul>
+</div>
+<div style="width:100%;">
+    <h2>Transform Security</h2>
+<ul>
+<li>VMware NSX - Getting Started</li>
+<li>VMware NSX - Distributed Firewall and Micro-Segmentation</li>
+<li>vRealize Network Insight - Getting Started</li>
+</ul>
+</div>
+</div></td>
+</tr>
+<tr>
+<td valign="middle" bgcolor=""><p>Preferred Time slot:</p>
+<p> (Select any one)<span class="req">*</span>:</p></td>
+<td valign="middle" bgcolor=""><p>
+    <label>
+    <input type="checkbox" name="labhrs[]" id="labhrs" value="9:00 AM - 11:00 AM" onclick="chkcontrol2(1)">
+    9:00 AM - 11:00 AM</label>
+<br>
+<label>
+<input type="checkbox" name="labhrs[]" id="labhrs" value="11:00 AM - 1:00 PM" onclick="chkcontrol2(2)"  disabled >
+11:00 AM - 1:00 PM [Not available]</label>
+<br>
+<label>
+<input type="checkbox" name="labhrs[]" id="labhrs" value="2:00  PM – 4:00 PM" onclick="chkcontrol2(3)" disabled>
+2:00  PM – 4:00 PM [Not available]</label>
+<br>
+<label>
+<input type="checkbox" name="labhrs[]" id="labhrs" value="4:00 PM - 6:00 PM" onclick="chkcontrol2(4)">
+    4:00 PM - 6:00 PM</label>
+</p>
+<div id="labhrs-error" class="msg"></div></td>
+</tr>
+
+<tr>
+<td colspan="2" align="left" valign="middle" bgcolor="" style="padding-top:10px;">
+    <table cellpadding="0" cellspacing="0" width="300px;" align="left">
+    <tr>
+    <td>
+    <input type="hidden" name="language" value="ENGLISH">
+    <input type="checkbox" name="optin" id="optin" value="YES" checked>&nbsp;<span id="translatedText"></span><div id="msg4"></div>
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+
+
+<tr>
+<td colspan="2" align="center" valign="middle" bgcolor="" class="btn btn-default registerbtn" style="padding-top:10px;"><input type="submit" name="submit" class="regBtn" value="Submit" /></td>
+    </tr>
+    </table>
+    </form>
+    </td>
+    </tr>
+
+    <!--<tr>
+    <td valign="top" align="center" style="font-family:Arial, sans-serif; font-size:22px; text-align:center; color:#fff; line-height: 20px; padding:20px 20px;">
+    <p align="center">
+    <a href="http://shobizresponse.com/2018/vForum/register.html"><img src="http://shobizresponse.com/2018/vForum/images/register.png" width="171" style="width: 171px; margin: 0 auto;"></a>
+    </p>
+    </td>
+    </tr>-->
+
+    <!-- Footer Starts-->
+    <!--<tr>
+    <td valign="top" align="center" bgcolor="#333333" style="font-family:Arial, sans-serif; padding:10px 20px 20px 20px; font-size:11px; text-align:center; color:#ffffff;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+    <td valign="top" align="center"><img src="http://shobizresponse.com/2018/vForum/images/invite/vmware-logo-white.png" width="130" /></td>
+    </tr>
+    <tr>
+    <td valign="top" align="center" style="padding-top:15px;">
+    <table border="0" cellpadding="0" cellspacing="0" width="258">
+    <tr>
+    <td width="30" valign="top" align="center" style="padding-right: 8px;"><a href="http://www.facebook.com/vmware" target="_blank"><img src="http://shobizresponse.com/2018/vForum/images/invite/icon-facebook.png" width="30" /></a></td>
+<td width="30" valign="top" align="center" style="padding-right: 8px;"><a href="https://twitter.com/VMware" target="_blank"><img src="http://shobizresponse.com/2018/vForum/images/invite/icon-twitter.png" width="30" /></a></td>
+<td width="30" valign="top" align="center" style="padding-right: 8px;"><a href="https://www.linkedin.com/company/vmware" target="_blank"><img src="http://shobizresponse.com/2018/vForum/images/invite/icon-linkedin.png" width="30" /></a></td>
+<td width="30" valign="top" align="center" style="padding-right: 8px;"><a href="http://blogs.vmware.com/" target="_blank"><img src="http://shobizresponse.com/2018/vForum/images/invite/icon-blog.png" width="30" /></a></td>
+<td width="30" valign="top" align="center" style="padding-right: 8px;"><a href="https://www.youtube.com/user/vmwaretv" target="_blank"><img src="http://shobizresponse.com/2018/vForum/images/invite/icon-youtube.png" width="30" /></a></td>
+<td width="30" valign="top" align="center" style="padding-right: 8px;"><a href="http://www.vmware.com/my_vmware/overview.html" target="_blank"><img src="http://shobizresponse.com/2018/vForum/images/invite/icon-vmware.png" width="30" /></a></td>
+<td width="30" valign="top" align="center"><a href="http://www.vmug.com/" target="_blank"><img src="http://shobizresponse.com/2018/vForum/images/invite/icon-vmug.png" width="30" /></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>-->
+<!-- Footer Ends-->
+</table>
+</td>
+<!-- Email Contents ends-->
+</tr>
+
+<!--<tr>
+<td style="padding:10px; font-family:Arial, Helvetica, sans-serif; font-size:10px;">
+    <table cellpadding="0" cellspacing="0" align="center" width="650" class="contents">
+    <tr>
+    <td style="font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height: 18px;">
+    Copyright &copy; 2018 VMware, Inc. All rights reserved. VMware is a registered trademark of VMware, Inc.</td>
+</tr>-->
+</table>
+
+<div id="page-footer" class="non-responsive-width"></div>
+    <script type="text/javascript" src="https://www.vmware.com/bin/vmware/template/scrapper.us.js"></script><script type="text/javascript" src="https://www.vmware.com/content/dam/vmwaredesigns/scraper/non-responsive.js"></script>
+
+</body>
+</html>

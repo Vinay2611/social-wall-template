@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/admin_panel/tests" isTestSource="true" packagePrefix="App\Test\" />
+      <sourceFolder url="file://$MODULE_DIR$/admin_panel/vendor/cakephp/cakephp/tests" isTestSource="true" packagePrefix="Cake\Test\" />
+      <sourceFolder url="file://$MODULE_DIR$/admin_panel/src" isTestSource="false" packagePrefix="App\" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/ajgl/breakpoint-twig-extension" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/aptoma/twig-markdown" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/asm89/twig-cache-extension" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/aura/intl" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/cakephp/bake" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/cakephp/cakephp" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/cakephp/cakephp-codesniffer" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/cakephp/chronos" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/cakephp/debug_kit" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/cakephp/migrations" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/cakephp/plugin-installer" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/dnoegel/php-xdg-base-dir" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/jakub-onderka/php-console-color" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/jakub-onderka/php-console-highlighter" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/jasny/twig-extensions" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/jdorn/sql-formatter" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/josegonzalez/dotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/justinrainbow/json-schema" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/m1/env" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/mobiledetect/mobiledetectlib" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/nikic/php-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/psy/psysh" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/robmorgan/phinx" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/seld/jsonlint" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/seld/phar-utils" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/squizlabs/php_codesniffer" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/symfony/config" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/symfony/debug" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/symfony/filesystem" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/symfony/yaml" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/twig/twig" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/umpirsky/twig-php-function" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/wyrihaximus/twig-view" />
+      <excludeFolder url="file://$MODULE_DIR$/admin_panel/vendor/zendframework/zend-diactoros" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>social wall template</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">New Conversation</button>
+
+<div class="wrapper">
+<div class="container">
+   <div class="conteiner-wrapper">
+   
+   <div class="box-wrapper">
+    <div class="form-group">
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+	   <div class="pull-left left-icon">
+	   	<label class="custom-file-upload">
+   		 <input type="file"/>
+   			 <i class="fas fa-camera"></i>
+		</label>
+	   </div>
+	   <div class="pull-right right-box">
+		   <span>140</span>
+		   <button type="button" class="btn btn-primary">POST</button>
+	   </div>
+	   <div class="clear"></div>
+	   </div>
+	   
+	      <div class="box-wrapper well1">
+			  <div class="namer-wrapper">
+				  <h2>Joydeep Ray <span class="unbold">liked this</span></h2>
+				  <h5 class="small">Oct 24 at 3:24 PM (GMT +05:30)</h5> 
+			  </div>
+	   	 </div>
+	   <div class="box-wrapper">	 
+	   <div class="well">
+	   		 <div class="namer-wrapper">
+				  <h2>Joydeep Ray <span class="unbold">liked this</span></h2>
+				  <h5 class="small">Oct 24 at 3:24 PM (GMT +05:30)</h5> 
+			  </div>
+		   <div class="comment-box">
+		   	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+		   </div>
+			  
+	   </div>
+	   <div class="well2">
+		   <ul>
+			   <li></li>
+			   <li><i class="far fa-heart"></i> 1</li>
+			   <li><i class="far fa-comment-alt"></i></li>
+		   </ul>
+	   </div>
+	   </div>
+   	 
+   	 	 <div class="box-wrapper">	 
+	   <div class="well">
+	   		 <div class="namer-wrapper">
+				  <h2>Joydeep Ray <span class="unbold">liked this</span></h2>
+				  <h5 class="small">Oct 24 at 3:24 PM (GMT +05:30)</h5> 
+			  </div>
+	   </div>
+	   <div class="comment-box">
+		   	<img src="images/logo.jpg" class="img-responsive">
+	</div>
+			  
+	   <div class="well2">
+		   <ul>
+			   <li></li>
+			   <li><i class="far fa-heart"></i> 1</li>
+			   <li><i class="far fa-comment-alt"></i></li>
+		   </ul>
+	   </div>
+	   </div>		
+	   	 
+	     
+	         
+	</div>
+</div>
+</div>
+
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>

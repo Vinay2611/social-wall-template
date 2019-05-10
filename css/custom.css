@@ -1,0 +1,51 @@
+#comment_msg{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #721c24;
+}
+#post_msg{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #1e7e34;
+}
+#fileName,#fileSizeMsg{
+    font-size: 10px;
+    /*font-size: 14px;*/
+    font-weight: 100;
+}
+
+#response_msg_like{
+    font-size: 10px;
+    color: blue;
+    display: block;
+}
+
+/*
+#response_msg_unlike {
+    font-size: 10px;
+    color: darkred;
+    display: block;
+}*/
+
+#scrollTop{
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: lightgrey;
+    color: white;
+    cursor: pointer;
+    padding: 1px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#myBtn:hover {
+    background-color: lightgrey;
+    padding: 2px;
+}

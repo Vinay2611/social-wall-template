@@ -1,0 +1,27 @@
+/*custom css added on 22-10-2018*/
+
+.border-class
+{
+    border:1px solid #ced4da;
+    margin:20px;
+    padding:20px;
+    border-radius: 0.25rem;
+}
+
+.centerdiv
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#response_msg_like{
+    font-size: 10px;
+    color: green;
+    display: block;
+}
+
+#response_msg_unlike {
+    font-size: 10px;
+    color: darkred;
+    display: block;
+}
